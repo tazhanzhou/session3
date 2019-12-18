@@ -4,7 +4,11 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
 
-	<bean id="personBean" class="springsample.Person"></bean>
-	
-	
+	<bean id="personBean" class="springsample.Person">
+	<constructor-arg type="int" name="passAgeValue" value="20" ></constructor-arg>
+
+	<constructor-arg name="nameOfPerson" type="String" value="Tom"></constructor-arg>
+	</bean>
+
+
 </beans>
